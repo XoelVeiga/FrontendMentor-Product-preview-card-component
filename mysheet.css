@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(194, 21%, 78%);
+    display: grid;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.card {
+    max-width: 16rem;
+    transition: 0.3s;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    justify-self: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
