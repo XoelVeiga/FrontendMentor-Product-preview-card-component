@@ -11,11 +11,27 @@ body {
     justify-content: center;
     height: 100%;
     align-items: center;
+    font-family: 'Montserrat';
 }
 
 p {
     color: hsl(228, 12%, 48%);
     font-size: 1em;
+
+}
+
+del {
+    margin-left: 15px;
+    color: hsl(228, 12%, 48%);
+
+}
+
+h1 {
+    font-family: 'Fraunces';
+}
+
+.green {
+    color: rgb(45, 91, 45);
 }
 
 .img {
@@ -49,7 +65,7 @@ p {
 }
 
 .card {
-    max-width: 33rem;
+    max-width: 32rem;
     display: flex;
     transition: 0.3s;
     background-color: hsl(0, 0%, 100%);
@@ -61,17 +77,19 @@ p {
 }
 
 .card button {
+    font-family: 'Montserrat';
     border: none;
     outline: 0;
     padding: 12px;
+    margin-bottom: 10px;
     color: white;
     background-color: rgb(45, 91, 45);
     text-align: center;
     cursor: pointer;
     align-self: center;
     width: 100%;
-    font-size: 18px;
-    border-radius: 3%;
+    font-size: 15px;
+    border-radius: 10px;
 }
 
 .card button:hover {
@@ -80,9 +98,18 @@ p {
 
 @media only screen and (max-width: 600px) {
     .card {
+        max-width: 19rem;
         display: block;
         transition: 0.3s;
         background-color: hsl(0, 0%, 100%);
         border-radius: 3%;
+    }
+
+    .img {
+        width: 19rem;
+        height: 15rem;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 0%;
     }
 }
